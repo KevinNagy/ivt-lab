@@ -18,10 +18,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 11.0.7.10
+    - name: Set up JDK 11.0.7.10-hotspot
       uses: actions/setup-java@v1
       with:
-        java-version: 11.0.7.10
+        java-version: 11.0.7.10-hotspot
    - name: Build with Maven
     run: mvn -B package sonar:sonar --file pom.xml
     env:

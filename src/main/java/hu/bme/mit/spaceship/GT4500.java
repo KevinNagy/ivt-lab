@@ -5,6 +5,9 @@ package hu.bme.mit.spaceship;
 */
 public class GT4500 implements SpaceShip {
 
+	int test = 1;
+
+
   private TorpedoStore primaryTorpedoStore;
   private TorpedoStore secondaryTorpedoStore;
 
@@ -89,6 +92,8 @@ public class GT4500 implements SpaceShip {
 
         break; //Breaks te cycle
     }
+
+	
 
     return firingSuccess;
   }
